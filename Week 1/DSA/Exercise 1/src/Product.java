@@ -1,32 +1,30 @@
-import java.util.UUID;
+public class Product {
+    private final int productId;
+    private final String productName;
+    private final int quantity;
+    private final double price;
 
-class Product {
-
-    private String productId;
-    private String productName;
-    private int quantity;
-    private int price;
-
-    public Product(String productName, int quantity, int price) {
-        this.productId = UUID.randomUUID().toString();
-        this.productName = productName;
-        this.quantity = quantity;
-        this.price = price;
+    
+     Product(ProductBuilder builder) {
+        this.productId = builder.getProductId();
+        this.productName = builder.getProductName();
+        this.quantity = builder.getQuantity();
+        this.price = builder.getPrice();
     }
 
-    public String getProductId() {
+    public int getProductId() {
         return productId;
     }
+
     public String getProductName() {
         return productName;
     }
+
     public int getQuantity() {
         return quantity;
     }
-    public int getPrice() {
+
+    public double getPrice() {
         return price;
     }
-
-    
-
 }
