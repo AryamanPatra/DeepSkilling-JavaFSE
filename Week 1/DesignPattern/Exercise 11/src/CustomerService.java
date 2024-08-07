@@ -1,5 +1,5 @@
 public class CustomerService {
-    private CustomerRepository customerRepository;
+    private final CustomerRepository customerRepository;
 
     // Constructor injection
     public CustomerService(CustomerRepository customerRepository) {
