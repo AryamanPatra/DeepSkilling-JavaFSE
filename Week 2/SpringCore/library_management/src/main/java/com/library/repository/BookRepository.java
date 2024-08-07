@@ -21,7 +21,7 @@ public class BookRepository {
         for(String book: bookList){
             if (bookName.equals(book)){
                 bookList.remove(book);
-                System.out.println("Book removed -"+bookName+"!");
+                System.out.println("\nBook removed -"+bookName+"!\n");
                 return;
             }
         }

@@ -19,9 +19,9 @@ public class LibraryManagementApplication {
             bookService.addBook("The Celestial Chronicles");
             bookService.removeBook("Shadows of the Lost City");
             bookService.removeBook("The Celestial Chronicles");
-            System.out.println("Book List:-");
+            System.out.println("\nBook List:-\n");
             for (String book : bookService.getBookList()) {
-                System.out.println(book);
+                System.out.printf("\n%s\n\n",book);
             }
         }
     }
