@@ -3,9 +3,8 @@ package com.library.repository;
 import java.util.ArrayList;
 
 import org.springframework.lang.NonNull;
-import org.springframework.stereotype.Repository;
 
-@Repository
+
 public class BookRepository {
     private final ArrayList<String> bookList;
 

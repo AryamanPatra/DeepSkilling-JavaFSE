@@ -3,11 +3,9 @@ package com.library.service;
 import java.util.ArrayList;
 
 import org.springframework.lang.NonNull;
-import org.springframework.stereotype.Service;
 
 import com.library.repository.BookRepository;
 
-@Service
 public class BookService {
     private BookRepository bookRepository;
 
