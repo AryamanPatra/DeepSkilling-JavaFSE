@@ -1,4 +1,9 @@
 {
     "java.configuration.updateBuildConfiguration": "automatic",
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.project.sourcePaths": [
+        "Week 1/DesignPattern/Exercise 11/src",
+        "Week 1/DesignPattern/Exercise 1/src",
+        "Week 1/DSA/Exercise 7/src",
+    ]
 }
