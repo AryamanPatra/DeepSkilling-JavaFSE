@@ -5,6 +5,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.library.repository.BookRepository;
 import com.library.service.BookService;
 
+/*
+
+        NOTE - this Library Management app is for Exercise 1-3
+
+ */
 public class LibraryManagementApplication {
 
     public static void main(String[] args) {
