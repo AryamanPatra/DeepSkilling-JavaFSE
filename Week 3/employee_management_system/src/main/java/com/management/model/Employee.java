@@ -5,22 +5,25 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="employees")
+@Table(name="employee")
 public class Employee {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="id")
     private long id;    
 
     private String name;
+    @Column(unique=true)
     private String email;
 
-    @Column(name="dept_id")
-    private long departmentId;
+    @ManyToOne
+    @JoinColumn(name="department_id",referencedColumnName="id")
+    private Department department;
     
     public long getId(){
         return id;
@@ -40,10 +43,10 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
-    public long getDepartmentId() {
-        return departmentId;
+    public Department getDepartment() {
+        return department;
     }
-    public void setDepartment(long departmentId) {
-        this.departmentId = departmentId;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 }

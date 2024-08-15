@@ -9,7 +9,7 @@ import com.management.model.Employee;
 public interface EmployeeRepository extends JpaRepository<Employee, Long>{
     Employee findEmployeeById(Long id);
 
-    List<Employee> findEmployeesByDeptId(Long id);
+    // List<Employee> findEmployeesByDeptId(Long id);
 
     List<Employee> findEmployeesByName(String name);
 
