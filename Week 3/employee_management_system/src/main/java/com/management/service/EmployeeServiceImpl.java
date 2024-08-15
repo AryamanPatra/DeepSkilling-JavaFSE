@@ -12,7 +12,7 @@ import com.management.repository.EmployeeRepository;
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
-    public EmployeeRepository employeeRepository;
+    EmployeeRepository employeeRepository;
 
     @Override
     public Employee saveEmployee(Employee employee) {
