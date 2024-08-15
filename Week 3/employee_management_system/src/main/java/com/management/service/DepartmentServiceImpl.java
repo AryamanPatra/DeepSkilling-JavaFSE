@@ -11,8 +11,8 @@ import com.management.repository.DepartmentRepository;
 @Service
 public class DepartmentServiceImpl implements DepartmentService{
 
-    @Autowired
-    DepartmentRepository departmentRepository;
+    @Autowired(required=true)
+    private DepartmentRepository departmentRepository;
 
     @Override
     public Department saveDepartment(Department department) {

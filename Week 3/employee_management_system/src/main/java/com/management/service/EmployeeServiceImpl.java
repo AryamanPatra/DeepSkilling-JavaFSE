@@ -11,8 +11,8 @@ import com.management.repository.EmployeeRepository;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    @Autowired
-    EmployeeRepository employeeRepository;
+    @Autowired(required=true)
+    public EmployeeRepository employeeRepository;
 
     @Override
     public Employee saveEmployee(Employee employee) {
