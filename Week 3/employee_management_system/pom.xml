@@ -8,11 +8,11 @@
 		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.management</groupId>
-	<artifactId>employee_management_system</artifactId>
+	<groupId>com.digitalnurture</groupId>
+	<artifactId>solution</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>EmployeeManagementSystem</name>
-	<description>Week 3 project</description>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
