@@ -18,8 +18,7 @@ public class DepartmentRepositoryImpl implements DepartmentRepository{
 
     @Override
     public void flush() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'flush'");
+        
     }
 
     @Override
